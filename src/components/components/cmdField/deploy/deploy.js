@@ -64,7 +64,7 @@ const generateCommands = (conf_Deploy) => [
   },
   {
     number: 4,
-    status: 'needtodo',
+    status: 'default',
     command: 'In package.json at "scripts", add:',
     clickToCopy: false
   },
