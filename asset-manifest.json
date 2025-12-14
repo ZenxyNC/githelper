@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/githelper/static/css/main.89aafae4.css",
+    "main.js": "/githelper/static/js/main.e9fb5920.js",
+    "static/js/453.390bcf6b.chunk.js": "/githelper/static/js/453.390bcf6b.chunk.js",
+    "static/media/PlusJakartaSans-SemiBold.ttf": "/githelper/static/media/PlusJakartaSans-SemiBold.cf92107f36f071f6384c.ttf",
+    "static/media/PlusJakartaSans-Medium.ttf": "/githelper/static/media/PlusJakartaSans-Medium.f78ffc04acb877ce387e.ttf",
+    "static/media/PlusJakartaSans-Light.ttf": "/githelper/static/media/PlusJakartaSans-Light.6c8e1d7ccc92d1bf041b.ttf",
+    "static/media/PlusJakartaSans-ExtraBold.ttf": "/githelper/static/media/PlusJakartaSans-ExtraBold.c3c2ec0cc06a27366227.ttf",
+    "static/media/PlusJakartaSans-Bold.ttf": "/githelper/static/media/PlusJakartaSans-Bold.542d4930de15d99be736.ttf",
+    "static/media/PlusJakartaSans-Regular.ttf": "/githelper/static/media/PlusJakartaSans-Regular.8b8f90ab0e945b1e795a.ttf",
+    "index.html": "/githelper/index.html",
+    "main.89aafae4.css.map": "/githelper/static/css/main.89aafae4.css.map",
+    "main.e9fb5920.js.map": "/githelper/static/js/main.e9fb5920.js.map",
+    "453.390bcf6b.chunk.js.map": "/githelper/static/js/453.390bcf6b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89aafae4.css",
+    "static/js/main.e9fb5920.js"
+  ]
+}
