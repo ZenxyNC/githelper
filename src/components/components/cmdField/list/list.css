@@ -1,0 +1,93 @@
+#list-maidiv {
+  width: 100%;
+  height: max-content;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 16px
+}
+
+#list-number {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--secondary);
+
+  border-radius: 10px;
+
+
+
+  font-family: _bold;
+  font-size: 16px;
+}
+
+#list-indicator {
+  transition: 0.2s all ease
+}
+
+#list-command {
+  width: calc(100% - 40px - 32px);
+  height: 40px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px 0px 16px;
+
+  background-color: var(--secondary);
+
+  border-radius: 10px;
+
+  font-family: _regular;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+
+  text-overflow: ellipsis;
+  overflow: scroll;
+  white-space: nowrap;
+
+  cursor:default;
+}
+
+#list-command.isCommand {
+  font-family: "Source Code Pro", monospace;
+  cursor: pointer;
+}
+
+#list-command::-webkit-scrollbar {
+  display: none
+}
+
+a {
+  color: var(--blue);
+  margin-left: 3px;
+  text-decoration-thickness: 2px;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  #list-maidiv {
+    gap: 12px;
+  }
+  
+  #list-number {
+    width: 50px;
+    height: 50px;
+  }
+
+  #list-command {
+    width: 80%;
+    min-width: 300px;
+    max-width: 500px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,118 @@
+#indicatorGuide-maidiv {
+  width: 100%;
+  height: max-content;
+
+  margin-top: -12px;
+
+  color: var(--font-secondary);
+  text-align: center;
+  font-family: _bold;
+}
+
+#indicatorGuide-maidiv h1 {
+  font-family: _bold;
+  font-size: 24px;
+  color: var(--font-primary);
+
+  text-align: left;
+  
+  margin-bottom: 12px
+}
+
+/* Indicator Item */
+.indicator-guide-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+
+  font-family: _medium;
+  font-size: 16px;
+  color: var(--font-primary)
+}
+
+.indicator-incomplete {
+  width: 4px;
+  height: 24px;
+
+  background-color: var(--red);
+
+  border-radius: 10px
+}
+
+.indicator-needtodo {
+  width: 4px;
+  height: 24px;
+
+  background-color: var(--green);
+
+  border-radius: 10px
+}
+
+.indicator-done {
+  width: 4px;
+  height: 24px;
+
+  background-color: var(--blue);
+
+  border-radius: 10px
+}
+
+.indicator-default {
+  width: 4px;
+  height: 24px;
+
+  background-color: var(--secondary);
+
+  border-radius: 10px
+}
+
+@media screen and (min-width: 1200px) {
+  #indicatorGuide-maidiv {
+    width: calc(100% - 40px);
+    height: max-content;
+
+    margin-top: unset;
+
+    position: absolute;
+    bottom: 20px;
+
+    background-color: transparent;
+  }
+
+  .indicator-incomplete {
+    width: 5px;
+    height: 30px;
+
+    background-color: var(--red);
+
+    border-radius: 10px
+  }
+
+  .indicator-needtodo {
+    width: 5px;
+    height: 30px;
+
+    background-color: var(--green);
+
+    border-radius: 10px
+  }
+
+  .indicator-done {
+    width: 5px;
+    height: 30px;
+
+    background-color: var(--blue);
+
+    border-radius: 10px
+  }
+
+  .indicator-default {
+    width: 5px;
+    height: 30px;
+
+    background-color: var(--secondary);
+
+    border-radius: 10px
+  }
+}
