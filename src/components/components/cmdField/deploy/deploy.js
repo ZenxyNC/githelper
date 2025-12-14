@@ -35,7 +35,7 @@ const generateCommands = (conf_Deploy) => [
   {
     number: 2.4,
     status: conf_Deploy.username && conf_Deploy.repository ? 'needtodo' : 'incomplete',
-    command: `git remote add origin https://github.com/${conf_Deploy.username ? conf_Deploy.username : 'your-username'}/${conf_Deploy.repository ? conf_Deploy.repository : 'your-repo'}.git`,
+    command: `git remote add origin git@github.com:${conf_Deploy.username ? conf_Deploy.username : 'your-username'}/${conf_Deploy.repository ? conf_Deploy.repository : 'your-repo'}.git`,
     clickToCopy: true
   },
   {
