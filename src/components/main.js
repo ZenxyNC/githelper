@@ -12,6 +12,7 @@ export default function Main() {
   const [conf_Deploy, setDeploy] = useState({
     username: "",
     repository: "",
+    branch: "",
     message: ""
   });
   const [conf_Commit, setCommit] = useState({

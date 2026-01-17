@@ -10,42 +10,6 @@ const generateCommands = (conf_Deploy) => [
   },
   {
     number: 2,
-    status: 'default',
-    command: 'Enter the following commands : ',
-    clickToCopy: false
-  },
-  {
-    number: 2.1,
-    status: 'needtodo',
-    command: 'git add .',
-    clickToCopy: true
-  },
-  {
-    number: 2.2,
-    status: conf_Deploy.message ? 'needtodo' : 'incomplete',
-    command: `git commit -m "${conf_Deploy.message ? conf_Deploy.message : 'Add deploy message'}"`,
-    clickToCopy: true
-  },
-  {
-    number: 2.3,
-    status: 'needtodo',
-    command: 'git branch -M main',
-    clickToCopy: true
-  },
-  {
-    number: 2.4,
-    status: conf_Deploy.username && conf_Deploy.repository ? 'needtodo' : 'incomplete',
-    command: `git remote add origin git@github.com:${conf_Deploy.username ? conf_Deploy.username : 'your-username'}/${conf_Deploy.repository ? conf_Deploy.repository : 'your-repo'}.git`,
-    clickToCopy: true
-  },
-  {
-    number: 2.5,
-    status: 'needtodo',
-    command: 'git push -u origin main',
-    clickToCopy: true
-  },
-  {
-    number: 2.6,
     status: 'needtodo',
     command: 'npm install gh-pages --save-dev',
     clickToCopy: true
@@ -53,61 +17,73 @@ const generateCommands = (conf_Deploy) => [
   {
     number: 3,
     status: 'default',
-    command: 'In package.json (above "name"), add:',
+    command: 'In vite.config.js, add:',
     clickToCopy: false
   },
   {
     number: 3.1,
-    status: conf_Deploy.username && conf_Deploy.repository ? 'needtodo' : 'incomplete',
-    command: `"homepage": "https://${conf_Deploy.username ? conf_Deploy.username : 'your-username'}.github.io/${conf_Deploy.repository ? conf_Deploy.repository : 'your-repo'}/",`,
+    status: conf_Deploy.repository ? 'needtodo' : 'incomplete',
+    command: `base: "/${conf_Deploy.repository ? conf_Deploy.repository : 'repo_name'}",`,
     clickToCopy: true
   },
   {
     number: 4,
     status: 'default',
-    command: 'In package.json at "scripts", add:',
+    command: 'In package.json (scripts), add:',
     clickToCopy: false
   },
   {
     number: 4.1,
     status: 'needtodo',
-    command: '"predeploy": "npm run build",',
+    command: `predeploy: "npm run build",`,
     clickToCopy: true
   },
   {
     number: 4.2,
     status: 'needtodo',
-    command: '"deploy": "gh-pages -d build",',
+    command: `deploy: "gh-pages -d dist",`,
     clickToCopy: true
   },
   {
     number: 5,
-    status: 'default',
-    command: 'Enter the following commands :',
-    clickToCopy: false
+    status: 'needtodo',
+    command: 'git init',
+    clickToCopy: true
   },
   {
-    number: 5.1,
+    number: 6,
     status: 'needtodo',
     command: 'git add .',
     clickToCopy: true
   },
   {
-    number: 5.2,
+    number: 7,
     status: conf_Deploy.message ? 'needtodo' : 'incomplete',
-    command: `git commit -m "${conf_Deploy.message ? conf_Deploy.message : 'Deploy'}"`,
+    command: `git commit -m "${conf_Deploy.message ? conf_Deploy.message : 'Commit Message'}"`,
     clickToCopy: true
   },
   {
-    number: 5.3,
-    status: 'needtodo',
-    command: 'git push',
+    number: 8,
+    status: conf_Deploy.branch ? 'needtodo' : 'incomplete',
+    command: `git branch -M ${conf_Deploy.branch ? conf_Deploy.branch : 'branch_name'}`,
     clickToCopy: true
   },
   {
-    number: 5.4,
+    number: 9,
+    status: conf_Deploy.username && conf_Deploy.repository ? 'needtodo' : 'incomplete',
+    command: `git remote add origin https://github.com/${conf_Deploy.username ? conf_Deploy.username : 'username'}/${conf_Deploy.repository ? conf_Deploy.repository : 'repo_name'}.git`,
+    clickToCopy: true
+  },
+  {
+    number: 10,
+    status: conf_Deploy.branch ? 'needtodo' : 'incomplete',
+    command: `git push -u origin ${conf_Deploy.branch ? conf_Deploy.branch : 'branch_name'}`,
+    clickToCopy: true
+  },
+  {
+    number: 11,
     status: 'needtodo',
-    command: 'npm run deploy',
+    command: `npm run deploy`,
     clickToCopy: true
   }
 ];

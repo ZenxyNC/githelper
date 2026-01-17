@@ -27,6 +27,16 @@ export default function Deploy({
           })}
         />
 
+        <input 
+          type="text" 
+          placeholder="Branch"
+          className="text-input"
+          onInput={(e) => setDeploy({
+            ...conf_Deploy, 
+            branch: e.target.value 
+          })}
+        />
+
         <textarea 
           placeholder="Commit message"
           className="textarea-input"

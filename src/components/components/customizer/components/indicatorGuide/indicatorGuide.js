@@ -1,10 +1,13 @@
 import './indicatorGuide.css'
 
 export default function IndicatorGuide() {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <>
       <div id="indicatorGuide-maidiv">
-        2025 @ ZenTech. All rights reserved.
+        Copyright @ {year} ZenTech.
         <div className='divider'></div>
         <h1>Indicators Guide</h1>
 

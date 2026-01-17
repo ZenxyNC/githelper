@@ -1,7 +1,7 @@
 {
   "homepage": "https://zenxync.github.io/githelper/",
   "name": "githelper",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
